@@ -4,11 +4,13 @@ let colorInput = document.querySelector("#colorInput");
 let applybtn = document.querySelector(".applybtn");
 let currentColorValue = document.querySelector(".currentColorValue");
 
-const colorArray = ["blue","green","red","cyan","aqua","brown","violet","pink"];
-
 const generateRandomColor = () => {
-    let randomNumber = Math.floor(Math.random()*colorArray.length);
-    return colorArray[randomNumber];
+   let hexValues = "0123456789abcdef";
+   let colors = "#";
+   for(i=0; i<6; i++){
+    colors += hexValues[Math.floor(Math.random()*16)];
+   }
+   return colors;
 }
 
 const changeColor = (color) => {
