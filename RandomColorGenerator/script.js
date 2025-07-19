@@ -28,5 +28,10 @@ const handleApplyBtnClick = () => {
     changeColor(color);
 }
 
+const copyColorCode = () => {
+    navigator.clipboard.writeText(currentColorValue.innerText);
+}
+
 randomBtn.addEventListener("click",handleRandomBtnClick);
 applybtn.addEventListener("click",handleApplyBtnClick);
+currentColorValue.addEventListener("click",copyColorCode);
