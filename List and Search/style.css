@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #F0F0F0;
+}
+
+.container{
+    width: 100%;
+    max-width: 35rem;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 50px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+    border-radius: 10px;
+}
+
+#searchInput{
+    padding: 12px 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
