@@ -34,3 +34,22 @@ body{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+.userContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.userContainer .userItem{
+    display: flex;
+    gap: 20px;
+    background-color: #fafaf8;
+    width: 100%;
+}
+
+.userContainer .userItem img{
+    width: 20px;
+    height: 20px;
+}
