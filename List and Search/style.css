@@ -45,11 +45,16 @@ body{
 .userContainer .userItem{
     display: flex;
     gap: 20px;
+    align-items: center;
+    padding: 0 15px;
     background-color: #fafaf8;
     width: 100%;
 }
 
 .userContainer .userItem img{
-    width: 20px;
-    height: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
 }
