@@ -42,7 +42,7 @@ renderUsers(users);
 function handleSearch (e) {
     let searchValue = e.target.value;
     let filteredUsers = users.filter((obj) => {
-        return obj.name.toLowerCase().includes(searchValue.toLowerCase());
+        return obj.name.toLowerCase().includes(searchValue.toLowerCase()) || obj.email.toLowerCase().includes(searchValue.toLowerCase())
     });
     renderUsers(filteredUsers);
 }
