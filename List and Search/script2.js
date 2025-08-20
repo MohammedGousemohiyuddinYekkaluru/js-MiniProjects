@@ -35,13 +35,16 @@ function renderUsers(arr) {
 renderUsers(users);
 
 function handleSearch(e) {
-  let searchValue = e.target.value;
-  let filteredUsers = users.filter(
-    (obj) =>
-      obj.name.toLowerCase().includes(searchValue.toLowerCase()) ||
-      obj.email.toLowerCase().includes(searchValue.toLowerCase())
-  );
-  renderUsers(filteredUsers);
+  let searchValue = e.target.value.toLowerCase();
+  let userItems = document.querySelectorAll(".user-item");
+
+  users.forEach((obj, index) => {
+    let isMatch =
+      obj.name.toLowerCase().includes(searchValue) ||
+      obj.email.toLowerCase().includes(searchValue);
+
+    userItems[index].style.display = isMatch ? "flex" : "none";
+  });
 }
 
 searchInput.addEventListener("input", handleSearch);
