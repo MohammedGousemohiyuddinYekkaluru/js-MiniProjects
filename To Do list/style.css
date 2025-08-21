@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    /* text-align: center; */
+}
+
+#container{
+    max-width: 35rem;
+    width: 100%;
+    background-color: #ccc;
+    margin: 75px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.inputContainer{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.inputContainer input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px 0;
+}
+
+.inputContainer button{
+    padding: 0 10px;
+    background-color: rgb(127, 174, 255);
+    border: none;
+    border-radius: 5px;
+    transition: all linear 0.3s;
+}
+
+.inputContainer button:active{
+    scale: 0.9;
+}
+
+.listContainer{
+    width: 100%;
+}
+
+.tasks{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+}
+
+.listContainer button{
+    padding: 2px;
+}
